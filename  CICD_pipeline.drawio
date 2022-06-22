@@ -1,32 +1,35 @@
-<mxfile host="app.diagrams.net" modified="2022-06-22T03:37:10.710Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/102.0.1245.41" etag="AdfqB3E0JSj4LFVqjloY" version="20.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-22T03:53:49.792Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/102.0.1245.41" etag="UX1skRqiFy266LkQdHcR" version="20.0.2" type="github">
   <diagram id="6kLb-M02YuVgt6Psm_b4" name="Page-1">
     <mxGraphModel dx="1018" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-1" value="Code Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-1" value="Code Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="100" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-2" value="This stage is to run pylint to analyze python codes, which make sure code is in good shape" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-2" value="This stage is to run pylint to analyze python codes, which make sure code is in good shape" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="100" y="170" width="120" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-3" value="UT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-3" value="UT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="260" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-4" value="This stage is to use pytest to verify UT cases, which make sure defined test cases are passed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-4" value="This stage is to use pytest to verify UT cases, which make sure defined test cases are passed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="260" y="170" width="120" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-5" value="Release" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-5" value="Release" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="414" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-6" value="This stage is to build docker image of repo, and release binary in Github and upload docker image to related artifactory e.g. DockerHub" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-6" value="This stage is to build docker image of repo, and release binary in Github and upload docker image to related artifactory e.g. DockerHub" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="414" y="170" width="120" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-7" value="Deploy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-7" value="Deploy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="580" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-8" value="This stage is to deploy docker image in container infra e.g. EKS, AKS, update deployment version if it has been already there" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="E4wgLqGfd8JsJrDYD4Sj-8" value="This stage is to deploy docker image in container infra e.g. EKS, AKS, update deployment version if it has been already there" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="580" y="170" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="bb5eyJoPXMDn7u6Qt9yQ-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Choice of CICD tool: Github Actions&lt;br&gt;Reason: Github Actions smoothly supports CICD functions for project already stored in Github&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="305" width="610" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
